@@ -40,8 +40,6 @@ function Edit() {
     const editData = async (e) => {
         e.preventDefault();
 
-        setLoader(true);
-
         if (Object.keys(validationUserData(user)).length > 0)
             setErrors(validationUserData(user));
         else {
